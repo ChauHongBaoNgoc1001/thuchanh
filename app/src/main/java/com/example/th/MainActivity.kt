@@ -1,6 +1,7 @@
 package com.example.th
 
 import android.annotation.SuppressLint
+import android.content.Intent
 import android.os.Bundle
 import android.os.PersistableBundle
 import android.view.ContextMenu
@@ -16,6 +17,17 @@ class MainActivity:AppCompatActivity (){
         setContentView(R.layout.activity_main)
         var button: Button = findViewById(R.id.button)
         var text1: TextView = findViewById(R.id.text)
+
+
+
+        text1.setOnClickListener {
+
+                var text1 = "hello"
+                val intent: Intent = Intent(this, MainActivity2::class.java)
+                intent.putExtra("text1", text1)
+                startActivity(intent)
+            }
+
 
         var mau = 1
 
