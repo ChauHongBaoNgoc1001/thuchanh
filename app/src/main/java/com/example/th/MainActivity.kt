@@ -28,7 +28,6 @@ class MainActivity:AppCompatActivity (){
                 startActivity(intent)
             }
 
-
         var mau = 1
 
         button.setOnClickListener {
@@ -37,15 +36,12 @@ class MainActivity:AppCompatActivity (){
                 text1.text = " Ngọc Châu"
                 button.setBackgroundColor(resources.getColor(R.color.A))
                 text1.setTextColor(resources.getColor(R.color.B))
-
             } else {
                 text1.text = "Ngọc"
 
             }
         }
     }
-
-
     override fun onStart() {
         super.onStart()
     }
